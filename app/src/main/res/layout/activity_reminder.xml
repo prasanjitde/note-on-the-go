@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pd.noteonthego.activities.ReminderActivity">
+
+    <TextView
+        android:id="@+id/reminder_already_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:textAllCaps="true"
+        style="@style/MonospaceLightBig"
+        android:text="@string/no_reminder"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/reminder_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dismiss_alarm"
+        android:onClick="dismissReminder"
+        android:fontFamily="sans-serif-light"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:padding="16dp"
+        android:background="@drawable/rectangle_button"
+        android:visibility="gone"
+        android:layout_below="@+id/reminder_already_set" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_below="@+id/reminder_dismiss"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:visibility="visible"
+        android:background="@color/switch_thumb_normal_material_dark"
+        android:layout_height="1px"/>
+
+    <Button
+        android:id="@+id/reminder_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_below="@+id/separator"
+        android:textColor="@color/note_text_color_dark"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:onClick="setDate"
+        android:text="@string/reminder_date"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/set_reminder_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:paddingTop="16dp"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        style="@style/MonospaceLightBig"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/primary_dark"
+        android:layout_below="@+id/separator" />
+
+    <Button
+        android:id="@+id/reminder_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center"
+        android:layout_below="@+id/set_reminder_date"
+        android:onClick="setTime"
+        android:textColor="@color/note_text_color_dark"
+        android:text="@string/reminder_time"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/set_reminder_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:clickable="false"
+        android:paddingTop="16dp"
+        android:textColor="@color/primary_dark"
+        style="@style/MonospaceLightBig"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:layout_below="@+id/set_reminder_date" />
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_below="@+id/set_reminder_time"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="visible"
+        android:background="@color/switch_thumb_normal_material_dark"
+        android:layout_height="1px"/>
+
+    <Spinner
+        android:id="@+id/spinner_reminder_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/separator2"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/btn_reminder_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_reminder_type"
+        android:fontFamily="sans-serif-light"
+        android:onClick="setReminder"
+        android:background="@drawable/rectangle_button"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="@string/set_reminder"
+        android:textColor="@color/note_text_color_dark"
+        android:enabled="false"
+        android:textSize="12sp" />
+
+</RelativeLayout>

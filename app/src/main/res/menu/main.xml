@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pd.noteonthego.activities.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="96"
+        android:title="@string/action_search_note"
+        android:icon="@drawable/ic_action_action_search"
+        appcompat:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_delete_multiple_notes"
+        android:orderInCategory="99"
+        android:title="@string/action_delete_note"
+        android:icon="@drawable/ic_action_action_delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_action_action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_note"
+        android:orderInCategory="97"
+        android:title="@string/action_add_note"
+        android:icon="@drawable/ic_action_action_assignment"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_checklist"
+        android:orderInCategory="98"
+        android:title="@string/action_add_checklist"
+        android:icon="@drawable/ic_action_action_assignment_turned_in"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="101"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pd.noteonthego.activities.AboutActivity">
+
+    <TextView
+        android:id="@+id/developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/developer"
+        android:textColor="@color/material_light_green_dark"
+        style="@style/MonospaceLightBig" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/developer"
+        android:text="@string/contact_email"/>
+
+    <TextView
+        android:id="@+id/libraries_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact"
+        android:layout_marginBottom="16dp"
+        android:text="Open Source Libraries"
+        android:textColor="@android:color/holo_red_dark"
+        style="@style/MonospaceLightBig" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/libraries_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                style="@style/MonospaceLightSmall"
+                android:textColor="@color/material_light_green_dark"
+                android:text="Material Design Icons"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="16dp"
+                android:text="Copyright 2014-2015 Google Inc, licenced under CC BY 4.0\n\nAttribution 4.0 International (CC BY 4.0)
+                \nhttps://creativecommons.org/licenses/by/4.0/" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                style="@style/MonospaceLightSmall"
+                android:textColor="@color/material_light_green_dark"
+                android:text="GSON library"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Copyright 2008 Google Inc.\n\nLicensed under the Apache License, Version 2.0 (the \'License\');\nYou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at
+                \n\nhttp://www.apache.org/licenses/LICENSE-2.0
+                \n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \'AS IS\' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and limitations under the License."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                style="@style/MonospaceLightSmall"
+                android:textColor="@color/material_light_green_dark"
+                android:text="DragSortListView"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="A subclass of the Android ListView component that enables drag and drop re-ordering of list items.\n\nCopyright 2012 Carl Bauer
+                \nLicensed under the Apache License, Version 2.0 (the \' License \');\nYou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at
+                \nhttp://www.apache.org/licenses/LICENSE-2.0 \n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \'AS IS\' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions andlimitations under the License." />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

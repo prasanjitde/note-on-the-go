@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.pd.noteonthego.fragments.NotesFragment">
+
+        <RelativeLayout
+            android:id="@+id/note_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/note_extras_reminder"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/ic_action_schedule"
+                android:drawablePadding="4dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/no_reminder"
+                android:textSize="12sp"
+                android:paddingLeft="8dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/note_extras"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/ic_content_create"
+                android:drawablePadding="4dp"
+                android:layout_alignBaseline="@+id/list_note_title"
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/note_extras_reminder"
+                android:background="@android:color/transparent"
+                android:hint="@string/note_title"
+                android:maxLength="30"
+                android:inputType="textCapSentences"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@color/note_text_color_dark"
+                style="@style/MonospaceLightBig"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/note_star"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/note_extras_reminder"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_toggle_star_outline" />
+
+            <EditText
+                android:id="@+id/note_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/note_title"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:hint="@string/add_note"
+                style="@style/MonospaceLightSmall"
+                android:lineSpacingExtra="8dp"
+                android:minHeight="144dp"
+                android:paddingLeft="8dp"
+                android:textColor="@color/note_text_color_dark"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+</ScrollView>

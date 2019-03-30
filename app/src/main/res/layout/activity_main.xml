@@ -1,0 +1,88 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitedarker"
+    tools:context="com.pd.noteonthego.fragments.NotesFragment">
+
+    <TextView
+        android:id="@+id/btn_multiple_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE SELECTED"
+        android:onClick="deleteMultiple"
+        android:fontFamily="sans-serif-light"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle_button"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/note_list"
+        android:divider="@color/whitedarker"
+        android:dividerHeight="2dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/btn_multiple_delete"
+        android:layout_height="match_parent"></ListView>
+
+    <TextView
+        android:id="@+id/no_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"
+        android:text="No Notes"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/add_note"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableRight="@drawable/ic_action_action_assignment"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="Add Note"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/add_checklist"
+        android:layout_below="@+id/add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_action_action_assignment_turned_in"
+        android:drawablePadding="2dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:visibility="gone"
+        android:text="Add Checklist (Todo)" />
+
+    <TextView
+        android:id="@+id/notification_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_checklist"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:text="To enable/disable notification icon for adding a note during a call, go to Settings" />
+
+</RelativeLayout>
+

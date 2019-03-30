@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">Note - On The Go</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_note">Add Note</string>
+    <string name="action_search_note">Search</string>
+    <string name="action_add_checklist">Add Checklist</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_about">About</string>
+    <string name="action_save_note">Save Note</string>
+    <string name="action_star_note">Star Note</string>
+    <string name="action_delete_note">Delete Note</string>
+    <string name="action_add_reminder">Reminder</string>
+    <string name="action_change_color">Change Color</string>
+    <string name="action_share_note">Share</string>
+    <string name="title_activity_reader">ReaderActivity</string>
+    <string name="title_activity_main">Note - OnTheGo</string>
+
+    <string name="title_section1">Notes</string>
+    <string name="title_section2">Settings</string>
+    <string name="title_section3">About</string>
+
+    <string name="note_title">Title</string>
+    <string name="add_note">Add note</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <!-- white lighter #F1F8E9 -->
+    <color name="primary">#3aa148</color>
+    <!-- little darker gray #33691E -->
+    <color name="primary_dark">#008c4d</color>
+    <!-- no idea what this is accent-->
+    <color name="accent">#abd0bc</color>
+    <!-- light gray -->
+    <color name="windowBackground">#ebe7e0</color>
+
+    <string name="title_activity_notes">Add Note</string>
+
+    <!-- TODO: added 65% A6 transparency using orange in place of red -->
+    <!--
+    <color name="note_red">#ffa346</color>
+    <color name="note_yellow">#ffff71</color>
+    <color name="note_blue">#47E8FE</color>
+    <color name="note_green">#82ff82</color>
+    <color name="note_white">#FFFFFF</color> -->
+    <color name="note_text_color">#646464</color>
+    <color name="note_text_color_gray">#7f7f7f</color>
+    <color name="note_text_color_dark">#202020</color>
+
+    <string name="note_color_dialog_title">Select Color</string>
+    <string name="set_reminder_dialog_title">Set Reminder</string>
+    <string name="note_select_btn">Select</string>
+    <string name="note_cancel_btn">Cancel</string>
+    <string name="note_confirm_btn">Confirm</string>
+    <string name="all_notes">ALL NOTES</string>
+    <string name="alert_delete_note">Delete note?</string>
+    <string name="alert_multi_delete_note">Delete selected notes?</string>
+    <string name="note_deleted">Deleted</string>
+    <string name="note_updated">Saved</string>
+    <string name="note_saved">Saved</string>
+    <string name="add_text">Add text here...</string>
+    <string name="send_to">Share note</string>
+    <string name="note_empty">Empty note discarded</string>
+
+    <array name="note_colors">
+        <item>Yellow</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Orange</item>
+        <item>White</item>
+    </array>
+
+    <array name="note_sort_options">
+        <item>Last Created First</item>
+        <item>Last modified First</item>
+        <item>Starred First</item>
+        <item>Notes First</item>
+        <item>Todos First</item>
+    </array>
+
+    <string-array name="note_sort_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <array name="reminder_type">
+        <item>One Time Event</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </array>
+
+    <array name="note_type">
+        <item>Note</item>
+        <item>Checklist</item>
+    </array>
+
+    <string name="title_activity_reminder">ReminderActivity</string>
+    <string name="reminder_date">SELECT DATE</string>
+    <string name="reminder_time">SELECT TIME</string>
+    <string name="reminder_type">Select Reminder Type</string>
+    <string name="add_reminder_title">Add Reminder</string>
+    <string name="reminder_set">Reminder set</string>
+    <string name="no_reminder">No Reminder</string>
+    <string name="title_activity_checklist">ChecklistActivity</string>
+    <string name="add_item">Add an item and press Enter</string>
+    <string name="btn_add">ADD</string>
+
+    <!-- TODO new light pleasing colors -->
+    <color name="note_red">#ffd5bf</color>
+    <color name="note_yellow">#fff2bc</color>
+    <!-- using sweeter blue -->
+    <color name="note_blue">#bbf1f4</color>
+    <color name="note_green">#cff09e</color>
+    <color name="note_white">@android:color/white</color>
+
+    <color name="denim">#b5ccd2</color>
+    <color name="cream">#f0ece1</color>
+    <color name="ultra">#b5dfcb</color>
+    <color name="invigorating">#eaedb4</color>
+    <color name="glass">#cae3e7</color>
+    <color name="Silly">#c6e8cb</color>
+
+    <color name="darkorange">#ff5a0b</color>
+    <color name="lightorange">#ffd5bf</color>
+    <color name="brightyellow">#fff2bc</color>
+    <color name="extremelightgreen">#e0e4cc</color>
+
+    <color name="lightgray">#ebe7e0</color>
+    <color name="littledarkergray">#bdb8ad</color>
+
+    <color name="yellowishgreen">#cff09e</color>
+    <color name="whitelighter">#f6f6f6</color>
+    <color name="whitedarker">#e8e8e8</color>
+
+    <color name="sweet_blue">#aaeef1</color>
+    <color name="sweeter_blue">#bbf1f4</color>
+
+    <string name="note_preference">note_shared_preference</string>
+    <string name="reminder_removed">Reminder removed</string>
+    <string name="edit_item">Edit Item</string>
+
+    <color name="transparent_black">#0D000000</color>
+    <color name="new_color">#4A5E66</color>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <color name="material_light_green">#F1F8E9</color>
+    <color name="material_light_green_dark">#33691E</color>
+
+    <string name="note_sort_dialog_title">Sort By</string>
+    <color name="google_gray">#f1f1f1</color>
+    <color name="dark_holo_blue">#193741</color>
+    <color name="light_holo_blue">#6c9597</color>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="developer">Developer - Prasanjit Dey</string>
+    <string name="contact_email">andmobidev@gmail.com</string>
+    <string name="title_activity_one_by_one_widget_configure">OneByOneWidgetConfigureActivity
+    </string>
+    <string name="star_note">Star</string>
+    <string name="unstar_note">Unstar</string>
+
+    <!-- actual (approx) color names added -->
+    <color name="peach_puff">#ffd5bf</color>
+    <color name="colonal_white">#fff2bc</color>
+    <color name="charlotte">#bbf1f4</color>
+    <color name="reef">#cff09e</color>
+    <string name="title_activity_two_by_two_widget_configure">TwoByTwoWidgetConfigureActivity
+    </string>
+
+    <string name="widget_onebyone">1</string>
+    <string name="widget_twobytwo">2</string>
+    <string name="dismiss_alarm">Already Set, DISMISS ALARM</string>
+    <string name="set_reminder">SET REMINDER</string>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:id="@+id/note_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <CheckBox
+                android:id="@+id/chk_multiple_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox_selector"
+                android:gravity="center"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="gone"
+                android:paddingRight="16dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/big_date"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/chk_multiple_delete"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/circle_textview"
+                android:gravity="center"
+                android:textColor="@color/note_text_color_dark"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/list_note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/big_date"
+                android:background="@android:color/transparent"
+                style="@style/MonospaceLightBig"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/dark_holo_blue"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/list_note_starred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_toggle_star"
+                android:visibility="gone" />
+
+            <!-- max lines important here -->
+
+            <TextView
+                android:id="@+id/list_note_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/list_note_title"
+                android:layout_toLeftOf="@+id/list_note_starred"
+                android:layout_toRightOf="@+id/big_date"
+                android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:lineSpacingExtra="6dp"
+                android:maxLines="8"
+                android:textColor="@color/note_text_color_dark"
+                style="@style/MonospaceLightSmall" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_below="@+id/list_note_content"
+                android:layout_toRightOf="@+id/big_date"
+                android:layout_alignRight="@+id/list_note_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"
+                android:background="@color/switch_thumb_normal_material_dark"
+                android:layout_height="1px"/>
+
+            <TextView
+                android:id="@+id/list_note_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator"
+                android:layout_toRightOf="@+id/big_date"
+                android:drawableLeft="@drawable/ic_action_schedule"
+                android:text="@string/no_reminder"
+                android:drawablePadding="4dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/dark_holo_blue"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

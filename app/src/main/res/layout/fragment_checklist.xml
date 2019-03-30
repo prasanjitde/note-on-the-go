@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/checklist_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.pd.noteonthego.fragments.ChecklistFragment">
+
+    <TextView
+        android:id="@+id/checklist_extras_reminder"
+        android:layout_width="wrap_content"
+        android:text="@string/no_reminder"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/ic_action_schedule"
+        android:drawablePadding="4dp"
+        android:paddingLeft="8dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/checklist_extras"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/ic_content_create"
+        android:drawablePadding="4dp"
+        android:layout_alignBaseline="@+id/list_note_title"
+        android:textSize="12sp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/checklist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/note_title"
+        android:maxLength="30"
+        android:paddingLeft="8dp"
+        android:layout_below="@+id/checklist_extras_reminder"
+        android:inputType="textCapSentences"
+        android:singleLine="true"
+        android:textColor="@color/note_text_color_dark"
+        style="@style/MonospaceLightBig"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/note_star"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/checklist_extras_reminder"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_toggle_star_outline" />
+
+
+    <EditText
+        android:id="@+id/edt_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checklist_title"
+        android:background="@android:color/transparent"
+        android:hint="@string/add_item"
+        android:inputType="textCapSentences"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="@color/note_text_color_dark"
+        style="@style/MonospaceLightBig" />
+
+    <com.mobeta.android.dslv.DragSortListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:dslv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/check_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoice"
+        android:layout_below="@+id/edt_list_item"
+        android:layout_marginTop="16dp"
+        android:minHeight="200dp"
+        dslv:collapsed_height="1px"
+        dslv:drag_enabled="true"
+        dslv:sort_enabled="true"
+        dslv:drag_handle_id="@id/drag_handle"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.6"
+        dslv:remove_enabled="false"
+        dslv:slide_shuffle_speed="0.3" />
+
+</RelativeLayout>
